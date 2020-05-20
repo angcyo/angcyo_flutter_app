@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:share/share.dart';
 
+/// https://pub.dev/packages/share
 Future<void> share(
   String text, {
   String subject,

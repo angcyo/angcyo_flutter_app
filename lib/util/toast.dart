@@ -2,6 +2,7 @@ import 'package:angcyo_flutter_app/angcyo_flutter_app.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
 /// 显示Toast
+/// https://pub.dev/packages/fluttertoast
 Future<bool> toast(String msg,
     {bool cancel = true,
     toastLength = Toast.LENGTH_SHORT,
