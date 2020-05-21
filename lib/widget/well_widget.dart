@@ -1,3 +1,4 @@
+import 'package:angcyo_flutter_app/angcyo_flutter_app.dart';
 import 'package:flutter/material.dart';
 
 class WellItemWidget extends StatelessWidget {
@@ -8,7 +9,7 @@ class WellItemWidget extends StatelessWidget {
 
   const WellItemWidget(
       {Key key,
-      this.minHeight = 150,
+      this.minHeight = 50,
       this.backgroundColor = Colors.white,
       this.child,
       this.onPressed})
@@ -22,13 +23,56 @@ class WellItemWidget extends StatelessWidget {
       child: Material(
         child: Ink(
           child: InkWell(
-            child: child,
+            child: Container(
+              alignment: Alignment.centerLeft,
+              child: child,
+            ),
             onTap: () {
               onPressed?.call();
             },
           ),
         ),
       ),
+    );
+  }
+}
+
+class WhiteListTile extends ListTile {
+  final Color backgroundColor;
+
+  WhiteListTile({
+    Key key,
+    this.backgroundColor = Colors.white,
+    Widget leading,
+    Widget title,
+    Widget subtitle,
+    Widget trailing,
+    isThreeLine = false,
+    bool dense,
+    EdgeInsetsGeometry contentPadding,
+    bool enabled = true,
+    GestureTapCallback onTap,
+    GestureLongPressCallback onLongPress,
+    bool selected = false,
+  }) : super(
+            key: key,
+            leading: leading,
+            title: title,
+            subtitle: subtitle,
+            trailing: trailing,
+            isThreeLine: isThreeLine,
+            dense: dense,
+            contentPadding: contentPadding,
+            enabled: enabled,
+            onTap: onTap,
+            onLongPress: onLongPress,
+            selected: selected);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      color: backgroundColor,
+      child: super.build(context),
     );
   }
 }
