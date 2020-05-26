@@ -29,6 +29,19 @@ dependencies:
   # https://pub.dev/packages/oktoast
   oktoast: ^2.3.2
 
+  # https://pub.dev/packages/frefresh
+  frefresh: ^1.1.0
+  # https://pub.dev/packages/fswitch
+  fswitch: ^1.1.2
+  # https://pub.dev/packages/fsuper
+  fsuper: ^0.1.5
+  # https://pub.dev/packages/ffloat
+  ffloat: ^1.0.1
+  # https://pub.dev/packages/fradio
+  fradio: ^1.0.1
+  # https://pub.dev/packages/fbutton
+  fbutton: ^1.0.4
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

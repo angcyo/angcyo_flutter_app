@@ -5,3 +5,4 @@ export 'package:oktoast/oktoast.dart';
 
 export 'package:angcyo_flutter_app/widget/widget.dart';
 export 'package:angcyo_flutter_app/util/util.dart';
+export 'package:angcyo_flutter_app/route/route.dart';
